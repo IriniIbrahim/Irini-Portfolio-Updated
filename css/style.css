@@ -391,17 +391,3 @@ a.active {
 		width: 95%;
 	}
 }
-section:nth-child(1) {
-	color: #3f3b3b;
-}
-section:nth-child(2) {
-	color: #ffffff;
-	background: #616262;
-}
-section:nth-child(3) {
-	color: #7a7e7e;
-}
-section:nth-child(4) {
-	color: #42455a;
-	background: #b2b2b2;
-}
