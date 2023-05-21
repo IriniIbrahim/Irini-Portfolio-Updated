@@ -27,3 +27,35 @@
 // button.addEventListener('click', toggleNav);
 
 
+
+const scrollProgress = document.getElementById('scroll-progress');
+const height =
+	document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener('scroll', () => {
+	const scrollTop =
+		document.body.scrollTop || document.documentElement.scrollTop;
+	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+});
+
+
+let section = document.querySelectorAll("section");
+let menu = document.querySelectorAll("a");
+
+window.onscroll = () => {
+	section.forEach((i) => {
+		let top = window.scrollY;
+		let offset = i.offsetTop - 50;
+		let height = i.offsetLeft;
+		let id = i.getAttribute("id");
+
+		if (top >= offset && top < offset + height) {
+			menu.forEach((link) => {
+				link.classList.remove("active");
+				document
+					.querySelector("a[href*=" + id + "]")
+					.classList.add("active");
+			});
+		}
+	});
+};
