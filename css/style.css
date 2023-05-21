@@ -1,0 +1,398 @@
+@font-face {
+	font-family: "devicons";
+	src: url("../fonts/devicons.eot?xqxft6");
+	src: url("../fonts/devicons.eot?#iefixxqxft6")
+			format("embedded-opentype"),
+		url("../fonts/devicons.woff?xqxft6")
+			format("woff"),
+		url("../fonts/devicons.ttf?xqxft6")
+			format("truetype"),
+		url("../fonts/devicons.svg?xqxft6#devicons")
+			format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Open Sans", serif;
+	color: #343a40;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Saira Extra Condensed",
+		serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #343a40;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 5.5rem;
+}
+
+h2 {
+	font-size: 1.15rem;
+}
+.pstyle {
+	font-weight: 500;
+	font-family: "Saira Extra Condensed",
+		serif;
+	font-size: 1.2rem;
+	color: #000000;
+}
+.subheading {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: "Saira Extra Condensed",
+		serif;
+	font-size: 0.5rem;
+}
+.site-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #000000;
+	height: 10%;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	background-image: url("galaxybg2.gif");
+}
+.tab {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	width: 17rem;
+	height: 100vh;
+	/* background-color: #1c0130; */
+	background-image: url("galaxybg2.gif");
+	color: white;
+	justify-content: center;
+	text-align: center;
+	transform: translateX(-300%);
+	transition: transform 0.5s;
+}
+
+.tablinks {
+	margin-top: 2rem;
+	flex-direction: column;
+	width: inherit;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 15.5px;
+	color: #a0a2a4;
+	background-color: inherit;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 0%;
+	text-decoration: none;
+}
+
+.tablinks:hover {
+	color: #ffffff;
+}
+
+.tablinks.active {
+	color: #ffffff;
+}
+
+.tablinksfooter {
+	margin-top: 1rem;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	/* transition: 0.3s; */
+	font-size: 15.5px;
+	color: #a0a2a4;
+	background-color: inherit;
+	font-weight: 550;
+	text-transform: uppercase;
+}
+
+.tablinksfooter:hover {
+	color: #ffffff;
+}
+
+.tablinksfooter.active {
+	color: #bd5d38;
+}
+.tabwrapper {
+	width: 100%;
+	height: 100vh;
+	/* background-color: #ffffff25; */
+	/* border-image-source: url("galaxybg2.gif"); */
+	/* border: 0.8rem solid transparent;
+
+	border-image: url("galaxybg2.gif") 60
+		round; */
+}
+.tabcontent {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 17rem;
+	padding-top: 2rem;
+
+	color: #ffffff;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: auto;
+	margin-top: auto;
+	display: block;
+	border: 0.8rem solid transparent;
+	border-image: url("galaxybg2.gif") 60
+		round;
+	border-radius: 2rem;
+}
+
+.list-social-icons a {
+	color: #495057;
+}
+.list-social-icons a:hover {
+	color: #bd5d38;
+}
+.list-social-icons a .fa-lg {
+	font-size: 1.5rem;
+}
+
+.list-icons {
+	font-size: 3rem;
+}
+.list-icons .list-inline-item i:hover {
+	flex: coloumn;
+	color: #bd5d38;
+}
+
+.downloadbtn {
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 0.25rem;
+	background-color: #495057;
+	color: white;
+	border: none;
+	text-decoration: none;
+}
+.downloadbtn:hover {
+	background-color: #bd5d38;
+}
+.fa-star {
+	color: #495057;
+}
+.checked {
+	color: #bd5d38;
+}
+
+.svg {
+	width: 250px;
+	padding-top: 10px;
+	float: right;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 10px;
+	padding: 10px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0
+		rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	border: #000000 solid 0.2rem;
+}
+.cardimg {
+	height: 140px;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	/* box-shadow: 0 8px 16px 0
+		rgba(0, 0, 0, 0.373); */
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background-color: #00000070;
+}
+
+/* Add some padding inside the card container */
+.containercard {
+	padding: 2px 16px;
+}
+
+.timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	background-color: rgb(0, 0, 0);
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	border: 4px solid #bd5d38;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+	left: 0;
+}
+
+/* Place the container to the right */
+.right {
+	left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid rgb(0, 0, 0);
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent
+		transparent rgb(0, 0, 0);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid rgb(0, 0, 0);
+	border-width: 10px 10px 10px 0;
+	border-color: transparent rgb(0, 0, 0)
+		transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+	left: -16px;
+}
+
+/* The actual content */
+.content {
+	padding: 20px 30px;
+	background-color: rgb(0, 0, 0);
+	position: relative;
+	border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+	/* Place the timelime to the left */
+	.timeline::after {
+		left: 31px;
+	}
+
+	/* Full-width containers */
+	.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+
+	/* Make sure that all arrows are pointing leftwards */
+	.container::before {
+		left: 60px;
+		border: medium solid rgb(0, 0, 0);
+		border-width: 10px 10px 10px 0;
+		border-color: transparent
+			rgb(0, 0, 0) transparent
+			transparent;
+	}
+
+	/* Make sure all circles are at the same spot */
+	.left::after,
+	.right::after {
+		left: 15px;
+	}
+
+	/* Make all right containers behave like the left ones */
+	.right {
+		left: 0%;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.tab {
+		transform: translateX(0);
+	}
+	.tabcontent {
+		margin-left: 15rem;
+		padding-left: 5rem;
+		padding-bottom: 15rem;
+		padding-top: 10rem;
+		padding-right: 5rem;
+	}
+	.tabwrapper {
+		width: 100%;
+	}
+	/* .sidebar-nav {
+		transform: translateX(0);
+	} */
+
+	.site-footer {
+		transform: translatey(200%);
+	}
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+	.subheading {
+		font-size: 1.35rem;
+	}
+	.cardimg {
+		height: 200px;
+	}
+	.svg {
+		visibility: hidden;
+	}
+}
