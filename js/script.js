@@ -38,7 +38,6 @@ window.addEventListener('scroll', () => {
 	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 });
 
-
 let section = document.querySelectorAll("section");
 let menu = document.querySelectorAll("a");
 
