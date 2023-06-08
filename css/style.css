@@ -709,7 +709,6 @@ input.change:hover {
 	color: #a4abac;
 	margin-left: 40px;
 	margin-right: 40px;
-	margin-top: 100px;
 }
 .contentintro__container {
 	font-weight: 600;
@@ -747,7 +746,7 @@ input.change:hover {
 }
 .contentintro__container__list {
 	margin-top: 0;
-	padding-left: 40px;
+	padding-left: 90px;
 	margin-left: 80px;
 	text-align: left;
 	list-style: none;
@@ -796,7 +795,7 @@ input.change:hover {
 .Containers img {
 	position: -webkit-sticky;
 	position: sticky;
-	height: 10rem;
+	height: 8rem;
 	display: flex;
 	vertical-align: middle;
 	margin: 10px;
@@ -990,7 +989,6 @@ input.change:hover {
 		height: 90px;
 		font-size: 35px;
 		line-height: 40px;
-		margin-top: 0px;
 	}
 
 	.contact {
