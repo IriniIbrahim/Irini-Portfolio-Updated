@@ -190,6 +190,7 @@ input.change:hover {
 	justify-content: center;
 	display: flex;
 	background-image: url("galaxybg2.gif");
+	transform: translatey(100%);
 }
 .tab {
 	position: fixed;
@@ -709,6 +710,7 @@ input.change:hover {
 	color: #a4abac;
 	margin-left: 50px;
 	margin-right: 50px;
+	margin-top: 100px;
 }
 .contentintro__container {
 	font-weight: 600;
@@ -989,6 +991,7 @@ input.change:hover {
 		height: 90px;
 		font-size: 35px;
 		line-height: 40px;
+		margin-top: 0px;
 	}
 
 	.contact {
