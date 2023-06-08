@@ -795,7 +795,7 @@ input.change:hover {
 .Containers img {
 	position: -webkit-sticky;
 	position: sticky;
-	height: 8rem;
+	height: 5rem;
 	display: flex;
 	vertical-align: middle;
 	margin: 10px;
