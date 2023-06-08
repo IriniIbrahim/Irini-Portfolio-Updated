@@ -50,7 +50,12 @@ h1 {
 h2 {
 	font-size: 1.15rem;
 }
-
+/* input.change {
+	background-image: url(/img/logonobg.svg);
+}
+input.change:hover {
+	background-image: url(/img/logonobgHOVER.svg);
+} */
 /* newtest */
 .toolbox {
 	display: flex;
@@ -298,8 +303,6 @@ h2 {
 }
 .downloadbtn:hover {
 	background-color: #be5a83;
-	transition: 0.5s ease-out;
-	letter-spacing: 2px;
 }
 .fa-star {
 	color: #495057;
@@ -763,11 +766,16 @@ h2 {
 
 /* newprojectssectiondesign */
 .slideshow-container {
-	max-width: 500px;
+	min-width: 700px;
 	position: relative;
 	margin: auto;
 	align-items: center;
 	justify-content: center;
+	display: grid;
+	background-color: #0000003c;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0
+		rgba(0, 0, 0, 0.2);
 }
 .image-description {
 	color: #000000;
@@ -778,20 +786,21 @@ h2 {
 }
 /* Make the images invisible by default */
 .Containers {
-	margin-left: 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center !important;
 }
 .Containers img {
-	max-height: 200px;
-	display: inline-block;
+	position: -webkit-sticky;
+	position: sticky;
+	height: 400px;
+	display: flex;
 	vertical-align: middle;
 	margin: 10px;
 }
 .Containers p {
-	display: inline-block;
+	display: flex;
 	vertical-align: middle;
 	margin: 10px;
 }
@@ -804,24 +813,24 @@ h2 {
 	width: auto;
 	margin-top: -23px;
 	padding: 17px;
-	color: grey;
+	color: #5c8984;
 	font-weight: bold;
 	font-size: 19px;
 	transition: 0.4s ease;
-	border-radius: 0 5px 5px 0;
+	border-radius: 5px;
 	user-select: none;
 }
 
 /* Place the "forward button" to the right */
 .forward {
 	right: 0;
-	border-radius: 4px 0 0 4px;
+	border-radius: 5px;
 }
 
 /*when the user hovers,add a black background with some little opacity */
 .Back:hover,
 .forward:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #be5a843f;
 }
 
 /*     */
@@ -952,7 +961,7 @@ h2 {
 	.tabcontent {
 		margin-left: 15rem;
 		padding-left: 5rem;
-		padding-bottom: 15rem;
+		padding-bottom: 5rem;
 		padding-top: 2.5rem;
 		padding-right: 5rem;
 	}
