@@ -782,7 +782,7 @@ input.change:hover {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding-left: 100px;
+	margin-top: 20px;
 }
 /* Make the images invisible by default */
 .Containers {
@@ -790,6 +790,8 @@ input.change:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center !important;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .Containers img {
 	position: -webkit-sticky;
