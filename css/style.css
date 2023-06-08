@@ -190,7 +190,6 @@ input.change:hover {
 	justify-content: center;
 	display: flex;
 	background-image: url("galaxybg2.gif");
-	transform: translatey(100%);
 }
 .tab {
 	position: fixed;
