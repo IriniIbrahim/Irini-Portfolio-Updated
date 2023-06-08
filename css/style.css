@@ -765,7 +765,7 @@ input.change:hover {
 
 /* newprojectssectiondesign */
 .slideshow-container {
-	min-width: 400px;
+	min-width: 300px;
 	position: relative;
 	margin: auto;
 	align-items: center;
